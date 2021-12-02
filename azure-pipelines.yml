@@ -13,7 +13,7 @@ steps:
   inputs:
     solution: KustoLanguageExtension.sln
     vsVersion: "17.0"
-    platform: amd64
+    platform: anycpu
     configuration: Release
     clean: true
 
