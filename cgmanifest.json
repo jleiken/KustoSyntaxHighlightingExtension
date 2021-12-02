@@ -1,0 +1,15 @@
+{
+    "Registrations": [
+        {
+            "Component": {
+                "Type": "other",
+                "other": {
+                    "Name": "Kusto Language Extension",
+                    "Version": "1.0",
+                    "DownloadUrl": "https://marketplace.visualstudio.com/items?itemName=jleiken.kustoSyntaxHighlighting"
+                }
+            },
+            "DevelopmentDependency": false
+        }
+    ]
+}
