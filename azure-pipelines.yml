@@ -1,0 +1,26 @@
+# Build and run component governance
+
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: VSBuild@1
+  name: VSBuild
+  displayName: Build solution KustoLanguageExtension.sln
+  inputs:
+    solution: KustoLanguageExtension.sln
+    vsVersion: "17.0"
+    platform: amd64
+    configuration: Release
+    clean: true
+
+- task: ComponentGovernanceComponentDetection@0
+  name: ComponentGovernanceComponentDetection
+  displayName: Component Governance
+  inputs:
+    scanType: 'Register'
+    verbosity: 'Verbose'
+    alertWarningLevel: 'High'
