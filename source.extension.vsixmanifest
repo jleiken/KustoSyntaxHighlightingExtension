@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="KustoLanguageExtension.C468965A-381A-4FD9-9597-C8363C7154E6" Version="1.0" Language="en-US" Publisher="Gavin Gregson" />
+        <Identity Id="Kusto Language Extension.JLeiken" Version="1.0" Language="en-US" Publisher="Jacob Leiken" />
         <DisplayName>Kusto Language Extension</DisplayName>
         <Description xml:space="preserve">Provides syntax highlighting for .csl and .kusto files using a slightly modified TextMate grammer from https://raw.githubusercontent.com/rosshamish/kuskus/master/kusto-syntax-highlighting/syntaxes/kusto.tmLanguage.</Description>
         <License>LICENSE</License>
@@ -9,7 +9,15 @@
         <PreviewImage>Resources\Icon128x128.png</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 17.0)" />
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
