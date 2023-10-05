@@ -8,6 +8,7 @@
         <key>fileTypes</key>
         <array>
             <string>csl</string>
+            <string>kql</string>
             <string>kusto</string>
         </array>
 
