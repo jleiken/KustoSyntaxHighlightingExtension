@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Kusto Language Extension.JLeiken" Version="1.0" Language="en-US" Publisher="Jacob Leiken" />
+        <Identity Id="Kusto Language Extension.JLeiken" Version="1.1" Language="en-US" Publisher="Jacob Leiken" />
         <DisplayName>Kusto Language Extension</DisplayName>
         <Description xml:space="preserve">Provides syntax highlighting for .csl and .kusto files using a slightly modified TextMate grammer from https://raw.githubusercontent.com/rosshamish/kuskus/master/kusto-syntax-highlighting/syntaxes/kusto.tmLanguage.</Description>
         <License>LICENSE</License>
